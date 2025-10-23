@@ -4,20 +4,31 @@
 
 header {
 
+
 }
 
 body {
 
+
 }
+
+.pageHeader {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
+  font-family: cabin;
 }
 
 /* cards container */
 .charContainer {
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr fit-content(300px 280px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
  
   
 }
@@ -27,7 +38,8 @@ ul {
   background-color:white;
   border: 1px solid rgb(0, 0, 0);
   margin: 5px;
-  
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -35,20 +47,31 @@ ul {
 .charHeadContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
+  font-family: oswald;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
 .charHeadContainer div {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
 }
 
 
 .charHeadContainer h2 {
+  display: flex;
   margin-bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
 }
 
 .charHeadContainer .favIcon {
-
+ 
 }
 
 /* character additional details - films */
@@ -57,6 +80,12 @@ ul {
   margin-bottom: 0;
 }
 
+.charBtnOptions{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 1em;
+}
 .charFilmsList {
   margin-top: 0;
 }
@@ -66,11 +95,13 @@ ul {
 }
 
 .charDetailsList{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .charDetailsList li{ 
-  margin:5px;
+  margin: 5px;
 }
 
 .primaryButton{
