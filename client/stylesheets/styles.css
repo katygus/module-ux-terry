@@ -16,6 +16,9 @@ ul {
 
 /* cards container */
 .charContainer {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr fit-content(300px 280px);
+ 
   
 }
 
@@ -24,6 +27,8 @@ ul {
   background-color:white;
   border: 1px solid rgb(0, 0, 0);
   margin: 5px;
+  
+
 }
 
 /* character card header */
